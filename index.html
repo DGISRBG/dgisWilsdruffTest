@@ -1,0 +1,67 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="initial-scale=1,user-scalable=no,maximum-scale=1,width=device-width">
+        <meta name="mobile-web-app-capable" content="yes">
+        <meta name="apple-mobile-web-app-capable" content="yes">
+        <link rel="stylesheet" href="./resources/ol.css">
+        <link rel="stylesheet" href="resources/fontawesome-all.min.css">
+        <link rel="stylesheet" href="./resources/ol-layerswitcher.css">
+        <link rel="stylesheet" href="./resources/qgis2web.css">
+        <style>
+        html, body {
+            background-color: #ffffff;
+        }
+        .ol-control > * {
+            background-color: #f8f8f8!important;
+            color: #444444!important;
+            border-radius: 0px;
+        }
+        .ol-attribution a, .gcd-gl-input::placeholder, .search-layer-input-search::placeholder {
+            color: #444444!important;
+        }
+        .search-layer-input-search {
+            background-color: #f8f8f8!important;
+        }
+        .ol-control > *:focus, .ol-control >*:hover {
+            background-color: rgba(248, 248, 248, 0.7)!important;
+        } 
+        .ol-control {
+            background-color: rgba(255,255,255,.4) !important;
+            padding: 2px !important;
+        } 
+        </style>
+
+        <style>
+        html, body, #map {
+            width: 100%;
+            height: 100%;
+            padding: 0;
+            margin: 0;
+        }
+        </style>
+        <title></title>
+    </head>
+    <body>
+        <div id="map">
+            <div id="popup" class="ol-popup">
+                <a href="#" id="popup-closer" class="ol-popup-closer"></a>
+                <div id="popup-content"></div>
+            </div>
+        </div>
+        <script src="resources/qgis2web_expressions.js"></script>
+<script src="resources/proj4.js"></script>
+        <script>proj4.defs('EPSG:25833','+proj=utm +zone=33 +ellps=GRS80 +towgs84=0,0,0,0,0,0,0 +units=m +no_defs');</script>
+        <script src="resources/polyfills.js"></script>
+        <script src="./resources/functions.js"></script>
+        <script src="./resources/ol.js"></script>
+        <script src="./resources/ol-layerswitcher.js"></script>
+        <script src="layers/Hecke_1.js"></script><script src="layers/Hhenpunkt_2.js"></script><script src="layers/Kanaldeckel_3.js"></script><script src="layers/KIVIDLine_4.js"></script><script src="layers/Kleinpunkt_5.js"></script><script src="layers/Laterne_6.js"></script><script src="layers/Measurepoint_7.js"></script><script src="layers/Punkt_8.js"></script><script src="layers/Station_9.js"></script><script src="layers/Straenrand_10.js"></script><script src="layers/Sttzmauer_11.js"></script><script src="layers/TextDGIS_12.js"></script><script src="layers/TopoSchieberGas_13.js"></script><script src="layers/UST_14.js"></script><script src="layers/Wegbegrenzung_15.js"></script><script src="layers/Wirtschaftsgebudelinie_16.js"></script><script src="layers/Wohngebudelinie_17.js"></script><script src="layers/Zaun_18.js"></script><script src="layers/Bschungsoberkante_19.js"></script><script src="layers/Bschungsunterkante_20.js"></script><script src="layers/Brcke_21.js"></script><script src="layers/Dokument_22.js"></script><script src="layers/DurchlassPunkt_23.js"></script><script src="layers/Flchenumringallgemein_24.js"></script><script src="layers/FMKabelschacht_25.js"></script><script src="layers/FMRohrstrecke_26.js"></script><script src="layers/FMSchutzrohr_27.js"></script><script src="layers/FMVerteiler_28.js"></script><script src="layers/FMMicrorohrRohrverbund_29.js"></script><script src="layers/FMMuffe_30.js"></script><script src="layers/FMTrasse_31.js"></script>
+        <script src="styles/Hecke_1_style.js"></script><script src="styles/Hhenpunkt_2_style.js"></script><script src="styles/Kanaldeckel_3_style.js"></script><script src="styles/KIVIDLine_4_style.js"></script><script src="styles/Kleinpunkt_5_style.js"></script><script src="styles/Laterne_6_style.js"></script><script src="styles/Measurepoint_7_style.js"></script><script src="styles/Punkt_8_style.js"></script><script src="styles/Station_9_style.js"></script><script src="styles/Straenrand_10_style.js"></script><script src="styles/Sttzmauer_11_style.js"></script><script src="styles/TextDGIS_12_style.js"></script><script src="styles/TopoSchieberGas_13_style.js"></script><script src="styles/UST_14_style.js"></script><script src="styles/Wegbegrenzung_15_style.js"></script><script src="styles/Wirtschaftsgebudelinie_16_style.js"></script><script src="styles/Wohngebudelinie_17_style.js"></script><script src="styles/Zaun_18_style.js"></script><script src="styles/Bschungsoberkante_19_style.js"></script><script src="styles/Bschungsunterkante_20_style.js"></script><script src="styles/Brcke_21_style.js"></script><script src="styles/Dokument_22_style.js"></script><script src="styles/DurchlassPunkt_23_style.js"></script><script src="styles/Flchenumringallgemein_24_style.js"></script><script src="styles/FMKabelschacht_25_style.js"></script><script src="styles/FMRohrstrecke_26_style.js"></script><script src="styles/FMSchutzrohr_27_style.js"></script><script src="styles/FMVerteiler_28_style.js"></script><script src="styles/FMMicrorohrRohrverbund_29_style.js"></script><script src="styles/FMMuffe_30_style.js"></script><script src="styles/FMTrasse_31_style.js"></script>
+        <script src="./layers/layers.js" type="text/javascript"></script> 
+        <script src="./resources/Autolinker.min.js"></script>
+        <script src="./resources/qgis2web.js"></script>
+    </body>
+</html>
